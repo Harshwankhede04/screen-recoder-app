@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Screen Recorder</title>
+
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Screen Recorder</h1>
+
+    <div id="status" class="status"></div>
+    <div id="volume" class="volume"></div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resumeBtn">Resume</button>
+      <button id="stopBtn">Stop</button>
+      <button id="micBtn">Mic On 🎙️</button>
+    </div>
+
+    <!-- 🔥 NEW TOGGLE -->
+    <div class="toggle">
+      <span id="toggleLabel">Silence Detection: OFF</span>
+      <label class="switch">
+        <input type="checkbox" id="silenceToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div id="videoContainer" class="hidden">
+      <video id="video" controls></video>
+      <a id="downloadLink">Download</a>
+    </div>
+  </div>
+
+  <script type="module" src="./src/script.ts"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+✅ 1. Viva Questions & Answers (Your Project)
+🔹 Q1. What is your project?
+
+Ans:
+My project is a web-based screen recording application that allows users to record their screen directly from the browser with features like pause, resume, microphone control, and optional silence detection.
+
+🔹 Q2. Which technologies are used?
+
+Ans:
+The project is built using HTML, CSS, and TypeScript, and it uses Web APIs like MediaRecorder API, getUserMedia, and Web Audio API.
+
+🔹 Q3. Why did you choose a web-based recorder?
+
+Ans:
+Because it does not require installation, works across platforms, and is lightweight. It runs directly in the browser, making it more accessible to users.
+
+🔹 Q4. What is MediaRecorder API?
+
+Ans:
+It is a Web API that allows recording media streams such as screen or audio and saves them as video files like WebM.
+
+🔹 Q5. What is silence detection in your project?
+
+Ans:
+It is a feature that monitors audio input and automatically pauses recording when sound is below a threshold and resumes when sound is detected again.
+
+🔹 Q6. Can user disable silence detection?
+
+Ans:
+Yes, it is optional. The user can toggle it ON or OFF depending on their requirement.
+
+🔹 Q7. How does microphone control work?
+
+Ans:
+The microphone stream is enabled or disabled using audio track toggling in the MediaStream object.
+
+🔹 Q8. How do you generate the video file?
+
+Ans:
+Chunks from MediaRecorder are stored in an array and then combined into a Blob, which is converted into a downloadable video URL.
+
+🔹 Q9. What is TypeScript used for?
+
+Ans:
+TypeScript is used to add type safety and better structure to JavaScript code, reducing runtime errors.
+
+🔹 Q10. What is the future scope?
+
+Ans:
+We can add video editing, cloud storage, real-time sharing, and better UI enhancements like waveform visualization.
+
+✅ 3. Examiner Questions from YOUR CODE
+
+These are the real tricky questions teachers ask after seeing your project code:
+
+🔥 Q1. Why did you use requestAnimationFrame for volume detection?
+
+👉 Expected answer:
+Because it provides a smooth loop optimized by the browser for real-time audio processing instead of using setInterval.
+
+🔥 Q2. Why did you use MediaStream + getDisplayMedia together?
+
+👉 Expected answer:
+getDisplayMedia captures screen video, and MediaStream is used to combine screen video with microphone audio.
+
+🔥 Q3. How does silence detection actually work internally?
+
+👉 Expected answer:
+We use Web Audio API (AnalyserNode) to get frequency data, calculate average volume, and compare it with a threshold.
+
+🔥 Q4. What happens when recording stops?
+
+👉 Expected answer:
+All tracks are stopped, audio context is closed, and recorded chunks are converted into a Blob for download.
+
+🔥 Q5. Why did you add a cooldown in pause/resume logic?
+
+👉 Expected answer:
+To prevent repeated rapid pause/resume switching due to small fluctuations in audio levels.
+
+🔥 Q6. What is the role of analyser.fftSize?
+
+👉 Expected answer:
+It defines the frequency resolution of audio analysis; higher values give more detailed sound analysis.
+
+🔥 Q7. Why WebM format?
+
+👉 Expected answer:
+Because MediaRecorder API natively supports WebM format in browsers without extra encoding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I am working on an RTMNU LaTeX project report for a Web-Based Screen Recorder.
+
+Current progress:
+- Chapter 1: Introduction done
+- Chapter 2: Project Overview done (Abstract, Problem Statement, Objectives, Technologies Used)
+- Chapter 3: System Design done (short version with architecture diagram)
+- Next pending: Chapter 4 (Results / Screenshots)
+
+Project features:
+- Screen recording using MediaRecorder API
+- Microphone support
+- Optional silence detection (auto pause/resume)
+- Download recorded video
+
+Continue from Chapter 4: Results / Screenshots in LaTeX format.
+
+
+
+🎯 What you achieved now
+
+You now have:
+
+✔ Chapter 1 → Introduction
+✔ Chapter 2 → Project Overview
+✔ Chapter 3 → System Design (NEW)
+✔ Chapter 4 → Implementation (NEW)
+🚀 Next step (important for marks)
+
+Next chapters should be:
+
+Screenshots / Results (VERY IMPORTANT)
+Conclusion (you already have)
+Future Scope
